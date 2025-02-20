@@ -1,0 +1,32 @@
+GET http://localhost:3000/reserves
+
+###
+
+GET http://localhost:3000/reserves/2
+
+###
+//afegir altre
+POST http://localhost:3000/reserves HTTP/1.1
+Content-Type: application/json
+
+{
+            "data_inici": 14,
+            "data_final": 15,
+            "estat": "si",
+            "notificacio": "no"
+}
+
+###
+PUT http://localhost:3000/reserves/1 HTTP/1.1
+Content-Type: application/json
+
+{
+            "data_inici": 13,
+            "data_final": 13,
+            "estat": "no",
+            "notificacio": "no"
+}
+###
+DELETE http://localhost:3000/reserves/0 HTTP/1.1
+
+

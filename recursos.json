@@ -1,0 +1,10 @@
+{
+    "recursos": [
+        {
+            "id": 1,
+            "nom": "Recurso1",
+            "estat": "f",
+            "categoria": 1
+        }
+    ]
+}

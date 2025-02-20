@@ -1,0 +1,32 @@
+GET http://localhost:3000/notificacions
+
+###
+
+GET http://localhost:3000/notificacions/2
+
+###
+//afegir altre
+POST http://localhost:3000/notificacions HTTP/1.1
+Content-Type: application/json
+
+{
+            "id": 2,
+            "estat": "enviada",
+            "fInici": "13/03/2024",
+            "fFinal": "14/03/2024"
+}
+
+###
+PUT http://localhost:3000/notificacions/1 HTTP/1.1
+Content-Type: application/json
+
+{
+            "id": 1,
+            "estat": "no",
+            "fInici": "12/03/2024",
+            "fFinal": "12/03/2024"
+}
+###
+DELETE http://localhost:3000/notificacions/2 HTTP/1.1
+
+

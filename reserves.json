@@ -1,0 +1,11 @@
+{
+    "reserves": [
+        {
+            "idReserva": 1,
+            "data_inici": 13,
+            "data_final": 14,
+            "estat": "si",
+            "notificacio": "si"
+        }
+    ]
+}
