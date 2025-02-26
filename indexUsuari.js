@@ -33,10 +33,14 @@ app.get("/usuaris", (req, res) => {
 });
 
 app.get("/usuaris/:id", (req, res) => {
+    //lee datos de un archivo
     const data = readData();
+    //coge el parametro del id i lo convierte en Int
     const id = parseInt(req.params.id);
+    //Se busca en la lista data.usuaris un usuario cuyo id coincida con el proporcionado en la URL.
     const usuari = data.usuaris.find((u) => u.id === id);
     if (!usuari) {
+        //si el usuario no se encuentra se devuelve la ifno entera
         return res.status(404).json({ message: "Usuari no trobat" });
     }
     res.json(usuari);

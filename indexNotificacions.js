@@ -45,7 +45,7 @@ app.get("/notificacions/:id",(req,res)=>{
     //Extraiem l'id de l'url recordem que req es un objecte tipus requets
     // que conté l'atribut params i el podem consultar
     const id=parseInt(req.params.id);
-    const notificacions=notificacions.notificacions.find((notificacions)=>notificacions.id===id);
+    const notificacions=data.notificacions.find((notificacions)=>notificacions.id===id);
     res.json(notificacions);
 })
 
